@@ -1,0 +1,16 @@
+        /* BREAKPOINT: Mobile landscape */
+        @media (max-width: 767px) {
+            #brxe-vpoxit {
+                top: auto;
+                align-items: center;
+                bottom: 0px;
+                padding-top: 5px;
+                padding-right: 15px;
+                padding-bottom: 23px;
+                padding-left: 15px;
+                background-color: var(--bricks-color-kzbokq);
+                z-index: 5;
+                position: fixed;
+                box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.16)
+            }
+        }

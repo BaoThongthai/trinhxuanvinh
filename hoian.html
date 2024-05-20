@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+            img{
+                
+                height: 500px;
+                width: 100%;
+                align-items: center;
+
+            }
+            h1{
+                text-align: center;
+                color: red;
+                font-size: 50px;
+            }
+
+            .bankarrow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            z-index: 9999; /* Đảm bảo icon hiển thị trên tất cả các phần tử khác */
+        }
+    </style>
+</head>
+<body>
+    <div class="bankarrow">
+        
+       <a href="index.html"><i class="fa-regular fa-circle-left fa-2x"></i></a> 
+    </div>
+    
+     <h1>  Bảng giá </h1>
+   
+
+   
+  <img src="/assets/img/anhbia/1.png" alt="">
+
+ <!-- Button centered on the screen -->
+ <div class="d-flex justify-content-center" style="margin-top: 10px;">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Đặt xe ngay
+    </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ĐẶT XE TRỰC TUYẾN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                  
+                    <form action="/xe-da-nang-di-hoi-an/?gad_source=1&#038;gclid=EAIaIQobChMI05m5sKH-hQMVCdsWBR1Bngs_EAAYASAAEgKfvPD_BwE#wpcf7-f595-p771-o1" method="post" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="box-choose">Chọn loại hình:</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="box-choose" id="one-way" value="Một chiều" checked>
+                                    <label class="form-check-label" for="one-way">Một chiều</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="box-choose" id="round-trip" value="Khứ hồi">
+                                    <label class="form-check-label" for="round-trip">Khứ hồi</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-name">Họ và tên:</label>
+                            <input type="text" class="form-control" id="form-name" placeholder="Họ và tên *" name="form-name" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-tel">Số điện thoại:</label>
+                            <input type="tel" class="form-control" id="form-tel" placeholder="Số điện thoại *" name="form-tel" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="form-departure">Nơi đi:</label>
+                                <input type="text" class="form-control" id="form-departure" placeholder="Nơi đi *" name="form-departure" required>
+                                <div class="valid-feedback">Hợp lệ.</div>
+                                <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="form-destination">Nơi đến:</label>
+                                <input type="text" class="form-control" id="form-destination" placeholder="Nơi đến *" name="form-destination" required>
+                                <div class="valid-feedback">Hợp lệ.</div>
+                                <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-car-type">Loại xe:</label>
+                            <select class="form-control" id="form-car-type" name="form-car-type" required>
+                                <option value="">Loại xe *</option>
+                                <option value="Xe 4 chỗ">Xe 4 chỗ</option>
+                                <option value="Xe 7 chỗ">Xe 7 chỗ</option>
+                                <option value="Xe 16 chỗ">Xe 16 chỗ</option>
+                            </select>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng chọn loại xe.</div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="form-adult">Người lớn:</label>
+                                <select class="form-control" id="form-adult" name="form-adult" required>
+                                    <option value="">Người lớn *</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <div class="valid-feedback">Hợp lệ.</div>
+                                <div class="invalid-feedback">Vui lòng chọn số lượng người lớn.</div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="form-child">Trẻ em:</label>
+                                <select class="form-control" id="form-child" name="form-child">
+                                    <option value="">Trẻ em</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="form-date">Ngày đi:</label>
+                                <input type="date" class="form-control" id="form-date" name="form-date" required>
+                                <div class="valid-feedback">Hợp lệ.</div>
+                                <div class="invalid-feedback">Vui lòng chọn ngày đi.</div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="form-hours">Giờ đi:</label>
+                                <input type="number" class="form-control" id="form-hours" min="0" max="23" placeholder="Giờ" name="form-hours" required>
+                                <div class="valid-feedback">Hợp lệ.</div>
+                                <div class="invalid-feedback">Vui lòng chọn giờ đi.</div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="form-minutes">Phút đi:</label>
+                                <input type="number" class="form-control" id="form-minutes" min="0" max="59" placeholder="Phút" name="form-minutes" required>
+                                <div class="valid-feedback">Hợp lệ.</div>
+                                <div class="invalid-feedback">Vui lòng chọn phút đi.</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-primary">Đặt ngay</button>
+                    </form>
+                    <div class="mt-3">
+                        <p><em>Thông tin mà bạn cung cấp sẽ được bảo mật tuyệt đối, tuân thủ theo chính sách bảo toàn thông tin của chúng tôi.</em></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
