@@ -30,9 +30,26 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/tienich.css">
   <link href="assets/css/carImg.css" rel="stylesheet">
-  <script src="/assets/js/h1anima_head.js"></script>
+  <link rel="stylesheet" href="assets/css/slideshow.css">
+  <script src="assets/js/h1anima_head.js"></script>
+  <script src="assets/js/tienich.js"></script>
   <script src="assets/js/showcard.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 
+  <!-- // JS hình ảnh tự chạy -->
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 3;
+
+    function switchSlide() {
+      const nextSlide = (currentSlide % totalSlides) + 1;
+      document.getElementById(`slide-dot-${nextSlide}`).checked = true;
+      currentSlide = nextSlide;
+    }
+
+    setInterval(switchSlide, 3000);</script>
+  <!-- End JS hình ảnh tự chạy -->
 
 </head>
 
@@ -71,11 +88,11 @@
           <li><a class="nav-link scrollto" href="#team">Công Ty</a></li>
           <li class="dropdown"><a href="#"><span>Bảng Giá</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="hoian.html">Đà Nẵng - Hội An</a></li>
-              <li><a href="bana.html">Đà Nẵng - Bà Nà</a></li>
-              <li><a href="nuithantai.html">Đà Nẵng - Núi Thần Tài</a></li>
-              <li><a href="huecity.html">Đà Nẵng - Huế</a></li>
-              <li><a href="vinwonder.html">Đà Nẵng - VinWonder</a></li>
+              <li><a href="banggia.html">Đà Nẵng - Hội An</a></li>
+              <li><a href="banggia.html">Đà Nẵng - Bà Nà</a></li>
+              <li><a href="banggia.html">Đà Nẵng - Núi Thần Tài</a></li>
+              <li><a href="banggia.html">Đà Nẵng - Huế</a></li>
+              <li><a href="banggia.html">Đà Nẵng - VinWonder</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Liên Hệ</a></li>
@@ -85,35 +102,45 @@
 
     </div>
   </header><!-- End Header -->
+  <!-- POPUP -->
+  <!-- <div class="overlay" id="overlay">
+  <div class="popup" id="popup">
+    <div class="close-btn" onclick="closePopup()">X</div>
+    <img src="assets/img/250K.png" alt="Popup Image">
+    
+  </div>
+</div> -->
+  <!-- POPUP END -->
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center blinking-border">
     <div class="container">
       <div>
-        <img id="animated-heading" data-aos="fade-left" data-aos-delay="200" src="/assets/img/250K.png"
-          >
+        <img id="animated-heading" data-aos="fade-left" data-aos-delay="200" src="assets/img/250K.png">
       </div>
 
-      <h1>Dịch vụ <span id="thuexedulich">Thuê Xe Du Lịch</span></h1>
-      <div id="carouselExampleIndicators" class="carousel slide riengno" data-bs-ride="carousel"
-        style="">
+      <h1>Dịch vụ <span id="thuexedulich">
+          Thuê Xe Du Lịch
+        </span></h1>
+      <!-- <div id="carouselExampleIndicators" class="carousel slide riengno" data-bs-ride="carousel" style="">
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/assets/img/anhdep_anhbia/bana.jpg" class="d-block w-100" alt="First slide">
+            <img src="assets/img/anhdep_anhbia/bana.jpg" class="d-block w-100" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img src="/assets/img/anhdep_anhbia/hoi-an-1.jpg" class="d-block w-100" alt="Second slide">
+            <img src="assets/img/anhdep_anhbia/hoi-an-1.jpg" class="d-block w-100" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img src="/assets/img/anhdep_anhbia/hue.jpg" class="d-block w-100" alt="Third slide">
+            <img src="assets/img/anhdep_anhbia/hue.jpg" class="d-block w-100" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img src="/assets/img/anhdep_anhbia/Vinwonder.jpg" class="d-block w-100" alt="Third slide">
+            <img src="assets/img/anhdep_anhbia/Vinwonder.jpg" class="d-block w-100" alt="Third slide">
           </div>
         </div>
 
-      </div>
+      </div> -->
 
       <div class="text-animation" style="margin-top: 20px;">
         <h4 style="color: whitesmoke;">Cùng bạn trên mọi nẻo đường</h4>
@@ -286,20 +313,20 @@
 
         <div class="row">
           <!-- Đà Nẵng Hội An -->
-          <div class="col-md-6 col-sm-12 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-sm-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="100">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
                 style="height: 80px;width: 150px;">
 
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/assets/img/car/hyundai-elantra-2019.png" class="d-block w-100" alt="First slide">
+                    <img src="assets/img/car/hyundai-elantra-2019.png" class="d-block w-100" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/kia-sedona-2020.png" class="d-block w-100" alt="Second slide">
+                    <img src="assets/img/car/kia-sedona-2020.png" class="d-block w-100" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/fortuner-trang.png" class="d-block w-100" alt="Third slide">
+                    <img src="assets/img/car/fortuner-trang.png" class="d-block w-100" alt="Third slide">
                   </div>
                 </div>
               </div>
@@ -315,20 +342,20 @@
           </div>
           <!-- End Đà Nẵng Hội An -->
           <!-- Đà Nẵng - VinWonder-->
-          <div class="col-md-6 col-sm-12 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-sm-6  col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="100">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
                 style="height: 80px;width: 150px;">
 
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/assets/img/car/kia-sedona-2020.png" class="d-block w-100" alt="First slide">
+                    <img src="assets/img/car/kia-sedona-2020.png" class="d-block w-100" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/civic.png" class="d-block w-100" alt="Second slide">
+                    <img src="assets/img/car/civic.png" class="d-block w-100" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/fortuner-trang.png" class="d-block w-100" alt="Third slide">
+                    <img src="assets/img/car/fortuner-trang.png" class="d-block w-100" alt="Third slide">
                   </div>
                 </div>
               </div>
@@ -345,21 +372,21 @@
           <!-- End Đà Nẵng - VinWonder -->
 
           <!-- Đà Nẵng - bà Nà-->
-          <div class="col-md-6 col-sm-12 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-sm-6  col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="100">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
                 style="height: 80px;width: 150px;">
 
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/assets/img/car/mitsubishi-xpander-2022-hinh-xe.png" class="d-block w-100"
+                    <img src="assets/img/car/mitsubishi-xpander-2022-hinh-xe.png" class="d-block w-100"
                       alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/kia-sedona-2020.png" class="d-block w-100" alt="Second slide">
+                    <img src="assets/img/car/kia-sedona-2020.png" class="d-block w-100" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/fortuner-trang.png" class="d-block w-100" alt="Third slide">
+                    <img src="assets/img/car/fortuner-trang.png" class="d-block w-100" alt="Third slide">
                   </div>
                 </div>
 
@@ -380,20 +407,20 @@
           <!-- End Đà Nẵng - bà Nà-->
 
           <!-- Đà Nẵng - Huế-->
-          <div class=" col-md-6 col-md-12 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class=" col-md-6 col-sm-6  col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="100">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
                 style="height: 80px;width: 150px;">
 
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/assets/img/car/hyundai-elantra-2019.png" class="d-block w-100" alt="First slide">
+                    <img src="assets/img/car/hyundai-elantra-2019.png" class="d-block w-100" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/transitmautrang-Pn3Um.png" class="d-block w-100" alt="Second slide">
+                    <img src="assets/img/car/transitmautrang-Pn3Um.png" class="d-block w-100" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="/assets/img/car/civic.png" class="d-block w-100" alt="Third slide">
+                    <img src="assets/img/car/civic.png" class="d-block w-100" alt="Third slide">
                   </div>
                 </div>
 
@@ -420,10 +447,10 @@
         </div>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-            <iframe src="banggia_mini.html" style="width:100%; height:3000px; border:none;"></iframe>
+            <iframe src="banggia_mini.html" style="width:100%; height:1800px; border:none;"></iframe>
           </div>
         </div>
-     </div>
+      </div>
     </section><!-- End Featured Services Section -->
     <!-- =================Đặt xe================== -->
     <section id="contact" class="contact">
@@ -441,7 +468,7 @@
             Your browser does not support the video tag.
           </video>
         </div>
-    </div>
+      </div>
     </section>
     <!-- ==================End Đặt xe============== -->
 
@@ -677,6 +704,25 @@
 
       </div>
     </section><!-- End Clients Section -->
+
+    <!-- slide show hình ảnh -->
+    <div class="slider-container">
+      <div class="menu">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+      </div>
+
+      <input id="slide-dot-1" type="radio" name="slides" checked>
+      <div class="slide slide-1"></div>
+
+      <input id="slide-dot-2" type="radio" name="slides">
+      <div class="slide slide-2"></div>
+
+      <input id="slide-dot-3" type="radio" name="slides">
+      <div class="slide slide-3"></div>
+    </div>
+    <!-- End slide show hình ảnh -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -1546,7 +1592,19 @@
       transform: rotateX(-90deg)
     }
   </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Hiển thị popup khi trang được tải
+      $('#overlay').css('display', 'flex');
+    });
 
+    // Hàm đóng popup
+    function closePopup() {
+      $('#overlay').css('display', 'none');
+    }
+
+  </script>
 </body>
 
 </html>

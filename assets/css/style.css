@@ -1975,3 +1975,363 @@ section {
 
 }
 
+
+@media only screen and (max-width: 414px) {
+  /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
+  #hero {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #animated-heading {
+    width: 160px;
+    height: 160px;
+  }
+
+  #carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-animation {
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .codepro-custom-btn {
+    margin-top: 20px;
+  }
+
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 80px;
+    height: 80px;
+    background: url('../img/beforeload.jpg') no-repeat center center;
+    background-size: contain;
+    animation: animate-preloader 4s ease-in-out infinite;
+  }
+
+}
+
+@media only screen and (max-width: 390px) {
+  /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
+  #hero {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #animated-heading {
+    width: 160px;
+    height: 160px;
+  }
+
+  #carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-animation {
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .codepro-custom-btn {
+    margin-top: 20px;
+  }
+
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 80px;
+    height: 80px;
+    background: url('../img/beforeload.jpg') no-repeat center center;
+    background-size: contain;
+    animation: animate-preloader 4s ease-in-out infinite;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
+  #hero {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #animated-heading {
+    width: 160px;
+    height: 160px;
+  }
+
+  #carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-animation {
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .codepro-custom-btn {
+    margin-top: 20px;
+  }
+
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 80px;
+    height: 80px;
+    background: url('../img/beforeload.jpg') no-repeat center center;
+    background-size: contain;
+    animation: animate-preloader 4s ease-in-out infinite;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
+  #hero {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #animated-heading {
+    width: 160px;
+    height: 160px;
+  }
+
+  #carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-animation {
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .codepro-custom-btn {
+    margin-top: 20px;
+  }
+
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 80px;
+    height: 80px;
+    background: url('../img/beforeload.jpg') no-repeat center center;
+    background-size: contain;
+    animation: animate-preloader 4s ease-in-out infinite;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
+  #hero {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #animated-heading {
+    width: 160px;
+    height: 160px;
+  }
+
+  #carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-animation {
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .codepro-custom-btn {
+    margin-top: 20px;
+  }
+
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 80px;
+    height: 80px;
+    background: url('../img/beforeload.jpg') no-repeat center center;
+    background-size: contain;
+    animation: animate-preloader 4s ease-in-out infinite;
+  }
+
+}
+
+@media only screen and (max-width: 820px) {
+  /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
+  #hero {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #animated-heading {
+    width: 160px;
+    height: 160px;
+  }
+
+  #carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-animation {
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .codepro-custom-btn {
+    margin-top: 20px;
+  }
+
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 80px;
+    height: 80px;
+    background: url('../img/beforeload.jpg') no-repeat center center;
+    background-size: contain;
+    animation: animate-preloader 4s ease-in-out infinite;
+  }
+
+}
+
+
+/* POPUP */
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup {
+
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative; /* Thêm thuộc tính này để làm cho phần tử con có thể được vị trí tuyệt đối */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*END POPUP */
+
+
