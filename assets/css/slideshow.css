@@ -1,6 +1,6 @@
-.slider-container {
-    height: 700px;
-    width: 100%;
+/* .slider-container {
+    height: 800px;
+    width: 90%;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -50,6 +50,7 @@
   
   .slide-1 {
     background-image: url("../img/anhbia/1.png");
+
   }
   
   .slide-2 {
@@ -60,3 +61,30 @@
     background-image: url("../img/anhbia/3.png");
   }
   
+
+  @media only screen and (max-width: 390px) {
+    .slider-container {
+      height: 250px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+  
+ 
+    .menu label {
+      cursor: pointer;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #ffffff;
+      border-radius: 50px;
+      margin: 0 .2em 1em;
+      transition: all .3s ease;
+    }
+    .slide-1 {
+      background-image: url("../img/anhbia/1.png");
+      height: 250px;
+      width: 300px;
+    }
+  } */
