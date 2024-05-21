@@ -270,6 +270,12 @@
     }
   });
 
+  
+
+  
+  
+  // END POPUP
+
   /**
    * Animation on scroll
    */
