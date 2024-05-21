@@ -52,8 +52,8 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background: url('../img/beforeload.jpg') no-repeat center center;
   background-size: contain;
   animation: animate-preloader 4s ease-in-out infinite;
@@ -1908,9 +1908,70 @@ section {
   }
 }
 
+/* hero màn hình thường  */
+#animated-heading {
+  float: right;height: 400px; width: 600px;
+}
+
+#carouselExampleIndicators{
+  height: 250px;width: 400px; margin-top: 20px;
+}
 
 
 
+/* css hero trên mobile  */
+/* Định nghĩa media query cho điện thoại iPhone 12 Pro hoặc các thiết bị có độ rộng màn hình tương tự */
+@media only screen and (max-width: 375px) {
+  /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
+  #hero {
+    padding: 20px;
+  }
 
-/* css mobile cho bảng giá */
+  .container {
+    width: 100%;
+  }
+
+  #animated-heading {
+    width: 160px;
+    height: 160px;
+  }
+
+  #carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-animation {
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .codepro-custom-btn {
+    margin-top: 20px;
+  }
+
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 80px;
+    height: 80px;
+    background: url('../img/beforeload.jpg') no-repeat center center;
+    background-size: contain;
+    animation: animate-preloader 4s ease-in-out infinite;
+  }
+
+}
 
