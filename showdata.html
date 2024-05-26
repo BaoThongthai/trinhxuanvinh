@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin chuyến đi</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2 class="mt-4">Thông tin chuyến đi</h2>
+    <div class="row" id="formDataList">
+      <!-- Data will be dynamically added here -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Fetch data from API
+      $.ajax({
+        url: 'https://6605116c2ca9478ea17f2d5d.mockapi.io/sendNail',
+        type: 'GET',
+        success: function(response) {
+          // Process response and display data
+          displayFormData(response);
+        },
+        error: function(xhr, status, error) {
+          console.error('Error fetching data:', error);
+        }
+      });
+
+      // Function to display form data
+      function displayFormData(data) {
+        var formDataList = $('#formDataList');
+        formDataList.empty(); // Clear previous data
+        
+        // Loop through each data item
+        $.each(data, function(index, item) {
+          var cardHTML = '<div class="col-md-4 mb-4">';
+          cardHTML += '<div class="card">';
+          cardHTML += '<div class="card-body">';
+          cardHTML += '<h5 class="card-title">ID: ' + item["id"] + '</h5>';
+          cardHTML += '<p class="card-text"><strong>Họ Tên:</strong> ' + item["form-name"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Số Điện Thoại:</strong> ' + item["form-tel"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Điểm đi:</strong> ' + item["form-departure"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Điểm Đến:</strong> ' + item["form-destination"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Loại Xe:</strong> ' + item["form-car-type"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Số người lớn:</strong> ' + item["form-adult"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Số người nhỏ:</strong> ' + item["form-child"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Ngày đi:</strong> ' + item["form-date"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Giờ đi:</strong> ' + item["form-hours"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Phút đi:</strong> ' + item["form-minutes"] + '</p>';
+          cardHTML += '<p class="card-text"><strong>Loại hình:</strong> ' + item["box-choose"] + '</p>';
+          cardHTML += '</div>';
+          cardHTML += '</div>';
+          cardHTML += '</div>';
+
+          // Append card HTML to the row
+          formDataList.append(cardHTML);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -54,7 +54,7 @@ h6 {
   left: calc(50% - 30px);
   width: 150px;
   height: 150px;
-  background: url('../img/beforeload.jpg') no-repeat center center;
+  background: url('../img/Vinh.png') no-repeat center center;
   background-size: contain;
   animation: animate-preloader 4s ease-in-out infinite;
 }
@@ -187,7 +187,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #222222;
+  color: #ED8403;
 }
 
 #header .logo a span {
@@ -258,7 +258,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #106eea;
+  background-color: #ED8403;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -275,7 +275,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #106eea;
+  color: #ED8403;
 }
 
 .navbar .dropdown ul {
@@ -725,7 +725,7 @@ section {
 }
 
 .featured-services .icon {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .featured-services .icon i {
@@ -842,7 +842,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #106eea;
+  background-color: #F48104;
 }
 
 /*--------------------------------------------------------------
@@ -866,7 +866,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #106eea;
+  background: #F48104;
   color: #fff;
   width: 56px;
   height: 56px;
@@ -1101,14 +1101,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #ffffff;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #106eea;
+  color: #F48104;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1972,7 +1972,7 @@ section {
     left: calc(50% - 30px);
     width: 80px;
     height: 80px;
-    background: url('../img/beforeload.jpg') no-repeat center center;
+    background: url('../img/Vinh.png') no-repeat center center;
     background-size: contain;
     animation: animate-preloader 4s ease-in-out infinite;
   }
@@ -2085,7 +2085,7 @@ section {
     left: calc(50% - 30px);
     width: 80px;
     height: 80px;
-    background: url('../img/beforeload.jpg') no-repeat center center;
+    background: url('../img/Vinh.png') no-repeat center center;
     background-size: contain;
     animation: animate-preloader 4s ease-in-out infinite;
   }
@@ -2140,7 +2140,7 @@ section {
     left: calc(50% - 30px);
     width: 80px;
     height: 80px;
-    background: url('../img/beforeload.jpg') no-repeat center center;
+    background: url('../img/Vinh.png') no-repeat center center;
     background-size: contain;
     animation: animate-preloader 4s ease-in-out infinite;
   }
@@ -2249,7 +2249,7 @@ section {
     left: calc(50% - 30px);
     width: 80px;
     height: 80px;
-    background: url('../img/beforeload.jpg') no-repeat center center;
+    background: url('../img/Vinh.png') no-repeat center center;
     background-size: contain;
     animation: animate-preloader 4s ease-in-out infinite;
   }
@@ -2356,7 +2356,7 @@ section {
     left: calc(50% - 30px);
     width: 80px;
     height: 80px;
-    background: url('../img/beforeload.jpg') no-repeat center center;
+    background: url('../img/Vinh.png') no-repeat center center;
     background-size: contain;
     animation: animate-preloader 4s ease-in-out infinite;
   }
@@ -2417,4 +2417,92 @@ section {
     display: none;
   }
 }
+
+#featured-services {
+  background-image: url('/assets/background/hinhnenden4k.jpg');
+  background-repeat: no-repeat; /* Ngăn chặn hình nền lặp lại */
+  background-size: cover; /* Đảm bảo hình nền phủ đầy kích thước của phần tử */
+  background-position: center; /* Căn giữa hình nền */
+
+  
+}
+
+
+#portfolio,#clients{
+  background-image: url('/assets/background/hinhnenden4k.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+/* Áp dụng cho carousel */
+.carousel-inner .carousel-item img {
+  border-radius: 10px; /* Đặt hình cong 4 góc */
+  border: 1px solid #fff; /* Viền trắng cỡ 1px */
+}
+
+#footer{
+  background-image: url('/assets/background/hinhnenden4k.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+/* @media (max-width: 390px) {
+  .col-md-6,
+  .col-sm-6,
+  .col-lg-3 {
+    flex-basis: 75%;
+    max-width: 75%;
+    max-height: 70%;
+  }
+} */
+
+
+.dropdown ul li {
+  position: relative; /* Đặt vị trí của mục con là tương đối */
+  padding-left: 20px;
+}
+
+.dropdown ul li .hover-image {
+  display: none;
+  position: absolute;
+  top: 0; /* Đặt vị trí của ảnh theo từng mục con */
+  left: -80px; /* Điều chỉnh vị trí của ảnh hiển thị */
+  border-radius: 10px; /* Bo tròn ảnh ở cả bốn góc */
+
+}
+
+        /* BREAKPOINT: Mobile landscape */
+        @media (max-width: 767px) {
+          #brxe-vpoxit {
+              top: auto;
+              align-items: center;
+              bottom: 0px;
+              padding-top: 5px;
+              padding-right: 15px;
+              padding-bottom: 23px;
+              padding-left: 15px;
+              background-color: var(--bricks-color-kzbokq);
+              z-index: 5;
+              position: fixed;
+              box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.16)
+          }
+      }
+
+
+.dropdown ul li:hover .hover-image {
+  display: block;
+  z-index: 1000;
+  height: 100px; /* Điều chỉnh kích thước của ảnh */
+  width: 100px; /* Điều chỉnh kích thước của ảnh */
+  border-radius: 10px;
+  padding-right: 10px;
+}
+
+
+
+
 
