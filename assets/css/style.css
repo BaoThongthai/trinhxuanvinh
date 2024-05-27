@@ -1917,7 +1917,10 @@ section {
   height: 250px;width: 400px; margin-top: 20px;
 }
 
-
+#google_translate_element{
+  margin-left: 60px;
+  margin-top: 1px;
+}
 
 /* css hero trên mobile  */
 /* Định nghĩa media query cho điện thoại iPhone 12 Pro hoặc các thiết bị có độ rộng màn hình tương tự */
@@ -1926,6 +1929,11 @@ section {
   #hero {
     padding: 20px;
 
+  }
+
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
   }
   .carousel {
     display: none;
@@ -1986,6 +1994,10 @@ section {
     padding: 10px;
     height: 400px;
   }
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
+  }
   .carousel {
     display: none;
   }
@@ -2043,6 +2055,10 @@ section {
   #hero {
     padding: 20px;
   }
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
+  }
 
   .container {
     width: 100%;
@@ -2098,6 +2114,10 @@ section {
     padding: 20px;
     height: 400px;
   }
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
+  }
 
   .container {
     width: 100%;
@@ -2151,6 +2171,10 @@ section {
   /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
   #hero {
     padding: 20px;
+  }
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
   }
 
   .container {
@@ -2207,7 +2231,10 @@ section {
     padding: 20px;
     height: 400px;
   }
-
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
+  }
   .container {
     width: 100%;
   }
@@ -2261,6 +2288,10 @@ section {
   #hero {
     padding: 20px;
     height: 400px;
+  }
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
   }
 
   .container {
@@ -2316,6 +2347,10 @@ section {
   #hero {
     padding: 20px;
   
+  }
+  #google_translate_element{
+    margin-left: 60px;
+    margin-top: 20px;
   }
 
   .container {
