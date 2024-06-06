@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* <![CDATA[ */
+        .text{position:relative;font-size:30px;font-weight:600}
+        .text.first-text{color:#333}
+        .text.sec-text{color:#4070F4}
+        .text.sec-text:before{content:"";position:absolute;top:0;left:0;height:100%;width:100%;background-color:#ffffff;border-left:2px solid #4070F4;animation:animate 4s steps(12) infinite}
+        @keyframes animate{40%,60%{left:calc(100% + 4px)}100%{left:0%}}
+        /* ]]> */</style>
+</head>
+<body>
+    <script>//<![CDATA[
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Freelancer";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Blogger";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "YouTuber";
+            }, 8000); //1s = 1000 milliseconds
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+//]]></script> 
+    <span class="text first-text">I'm a</span>
+<span class="text sec-text">Freelancer</span>
+</body>
+</html>
