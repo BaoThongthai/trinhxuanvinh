@@ -863,7 +863,7 @@
                 background-size: cover;
             }
         }
-        
+
         /* BREAKPOINT: Mobile portrait */
         @media (max-width: 576px) {
             #brxe-qqyend {
@@ -2228,8 +2228,12 @@
         href="https://xehoiandanang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxehoiandanang.com%2F" />
     <link rel="alternate" type="text/xml+oembed"
         href="https://xehoiandanang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxehoiandanang.com%2F&#038;format=xml" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="assets/js/tienich.js"></script>
+    <script src="assets/js/showcard.js"></script>
+    <script src="assets/js/formDatxe.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 
 
 
@@ -2245,8 +2249,7 @@
     <meta property="og:title" content="Đặt xe ri&#234;ng Đ&#224; Nẵng - Hội An gi&#225; rẻ chỉ 250.000đ/Xe" />
     <meta property="og:description"
         content="Chuy&#234;n xe ri&#234;ng Đ&#224; Nẵng - Hội An v&#224; ngược lại. ✅ Xe đ&#243;n tại kh&#225;ch sạn, s&#226;n bay Đ&#224; Nẵng đi Hội An gi&#225; rẻ. ✅ Xe 4 chỗ chỉ: 250.000 vnđ. Gọi ngay: ☎ 0905 833 828" />
-    <meta property="og:image"
-        content="" />
+    <meta property="og:image" content="" />
     <meta property="og:type" content="website" />
 </head>
 
@@ -2368,7 +2371,7 @@
         <section id="brxe-qqyend" class="brxe-section bricks-lazy-hidden">
             <div id="brxe-temqct" class="brxe-container bricks-lazy-hidden">
                 <h6 id="brxe-mfqowb" class="brxe-heading">Dịch Vụ Xe Du Lịch</h6>
-                <h1 id="brxe-ifunda" class="brxe-heading">Đà Nẵng &lt;-&gt; Hội An</h1>
+                <h1 id="brxe-ifunda" class="brxe-heading">TPC TRAVEL</h1>
                 <div id="brxe-uadbbs" class="brxe-block bricks-lazy-hidden">
                     <div id="brxe-niugly" class="brxe-icon-box">
                         <div class="icon"><i class="fas fa-check"></i></div>
@@ -2395,7 +2398,9 @@
                 </div>
             </div>
         </section>
-        
+
+
+        <!-- BẢNG GIÁ THUÊ XE -->
         <section id="bang-gia" class="brxe-section bricks-lazy-hidden">
             <div id="brxe-yefoch" class="brxe-container bricks-lazy-hidden">
                 <h2 id="brxe-vgxlow" class="brxe-heading">Bảng giá thuê xe</h2>
@@ -2407,13 +2412,14 @@
                         <div class="thuexe_layout_bang_gia">
                             <div class="bang_gia--inner">
                                 <div class="heading">
-                                    <h4 class="bricks-heading">Sân Bay - Khách Sạn Đà Nẵng</h4>
+                                    <!-- Sân Bay,ga,Trung tâm - Khách Sạn Đà Nẵng -->
+                                    <h4 class="bricks-heading">Sân Bay,ga,Trung tâm - Khách Sạn Đà Nẵng</h4>
                                     <div class="icon-box-wrapper icon-position-top">
                                         <div class="icon">
                                             <i class="fas fa-road"></i>
                                         </div>
                                         <div class="content-wrapper">
-                                            <p>Khoảng cách: 30km </p>
+                                            <p>Khoảng cách: -- </p>
                                         </div>
                                     </div>
 
@@ -2422,7 +2428,7 @@
                                             <i class="fas fa-clock"></i>
                                         </div>
                                         <div class="content-wrapper">
-                                            <p>Thời gian: 45 phút </p>
+                                            <p>Thời gian: -- </p>
                                         </div>
                                     </div>
                                 </div>
@@ -2432,63 +2438,49 @@
                                             <tr>
                                                 <td rowspan="2">Xe 4 chỗ</td>
                                                 <td class="cloumn-2">
-                                                    <span class="type">Trung Tâm</span>
+                                                    <span class="type">dưới 5km</span>
                                                     <span class="price">120K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
-                                                    <span class="type">Vùng Ven</span>
+                                                    <span class="type">trên 5km</span>
                                                     <span class="price">170K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td rowspan="2">Xe 7 chỗ</td>
                                                 <td class="cloumn-2">
-                                                    <span class="type">Trung Tâm</span>
+                                                    <span class="type">dưới 5km</span>
                                                     <span class="price">150K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
-                                                    <span class="type">Vùng Ven</span>
+                                                    <span class="type">trên 5km</span>
                                                     <span class="price">200K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td rowspan="2">Xe 16 chỗ</td>
                                                 <td class="cloumn-2">
-                                                    <span class="type">Trung tâm</span>
+                                                    <span class="type">Dưới 5km</span>
                                                     <span class="price">300k</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
-                                                    <span class="type">Vùng Ven</span>
+                                                    <span class="type">Trên 5km</span>
                                                     <span class="price">400K</span>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="footer-bang-gia">
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="tel:0979726546"><i
-                                                class="fas fa-phone"></i><span>0905 833 828</span></a>
-                                    </div>
-                                    <div class="button-form">
-                                        <a class="bricks-button md bricks-background-secondary bricks-link-type-external"
-                                            href="#dat-xe"><span>ĐẶT XE NGAY</span></a>
-                                    </div>
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="index.html">Chi tiết</a>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
-
+                        <!-- ĐÀ NẴNG - HỘI AN -->
                         <div class="thuexe_layout_bang_gia">
                             <div class="bang_gia--inner">
                                 <div class="heading">
@@ -2518,13 +2510,13 @@
                                                 <td rowspan="2">Xe 4 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">250K </span>
+                                                    <span class="price">250K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">550K </span>
+                                                    <span class="price">500K</span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -2537,43 +2529,245 @@
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">650K </span>
+                                                    <span class="price">600K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td rowspan="2">Xe 16 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">500K </span>
+                                                    <span class="price">450K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">900k</span>
+                                                    <span class="price">900K</span>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="footer-bang-gia">
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="tel:0979726546"><i
-                                                class="fas fa-phone"></i><span>0905 833 828</span></a>
-                                    </div>
-                                    <div class="button-form">
-                                        <a class="bricks-button md bricks-background-secondary bricks-link-type-external"
-                                            href="#dat-xe"><span>ĐẶT XE NGAY</span></a>
-                                    </div>
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="hoian.html">Chi tiết</a>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
 
+                        <!-- ĐÀ NẴNG - CÙ LAO CHÀM -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading">ĐÀ NẴNG - CÙ LAO CHÀM</h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 30km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 40 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">300K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">600K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">350K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">700K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">500K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1000K</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - RỪNG DỪA BÃI MẪU -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading">ĐÀ NẴNG - RỪNG DỪA BÃI MẪU</h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 30km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 40 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">280K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">550K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">330K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">650K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">450K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">900K</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - HOIANA RESORT&GOFT -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading">ĐÀ NẴNG - HOIANA RESORT&GOFT</h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 30km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 40 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">350K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">700k</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">400K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">800K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">550K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1100K</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- ĐÀ NẴNG - VINPEARL NAM HỘI AN -->
                         <div class="thuexe_layout_bang_gia">
                             <div class="bang_gia--inner">
                                 <div class="heading">
@@ -2616,7 +2810,65 @@
                                                 <td rowspan="2">Xe 7 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">450K </span>
+                                                    <span class="price">450K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">900K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">600K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1200K</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - THÁNH ĐỊA MỸ SƠN - ĐÀ NẴNG -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - THÁNH ĐỊA MỸ SƠN - ĐÀ NẴNG</h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 45 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 60 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -2626,40 +2878,179 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td rowspan="2">Xe 7 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">750K </span>
+                                                    <span class="price">--</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">1,400K </span>
+                                                    <span class="price">1000K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1200K</span>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="footer-bang-gia">
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="tel:0979726546"><i
-                                                class="fas fa-phone"></i><span>0905 833 828</span></a>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - TAM KỲ -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - TAM KỲ</h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
                                     </div>
-                                    <div class="button-form">
-                                        <a class="bricks-button md bricks-background-secondary bricks-link-type-external"
-                                            href="#dat-xe"><span>ĐẶT XE NGAY</span></a>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
                                     </div>
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="">Chi
-                                            tiết</a>
-                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">700K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">800K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1000K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- ĐÀ NẴNG - NÚI THÀNH -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - NÚI THÀNH</h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1000K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1200K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1400K</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ĐÀ NẴNG - HUẾ -->
                         <div class="thuexe_layout_bang_gia">
                             <div class="bang_gia--inner">
                                 <div class="heading">
@@ -2689,20 +3080,20 @@
                                                 <td rowspan="2">Xe 4 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">1400k </span>
+                                                    <span class="price">1300k </span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">1700k </span>
+                                                    <span class="price">1800K </span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td rowspan="2">Xe 7 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">1600k </span>
+                                                    <span class="price">1400K </span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -2715,36 +3106,23 @@
                                                 <td rowspan="2">Xe 16 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">2200k </span>
+                                                    <span class="price">1800K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">2500k </span>
+                                                    <span class="price">2400K</span>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="footer-bang-gia">
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="tel:0979726546"><i
-                                                class="fas fa-phone"></i><span>0905 833 828</span></a>
-                                    </div>
-                                    <div class="button-form">
-                                        <a class="bricks-button md bricks-background-secondary bricks-link-type-external"
-                                            href="#dat-xe"><span>ĐẶT XE NGAY</span></a>
-                                    </div>
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="huecity.html">Chi tiết</a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
+
+                        <!-- ĐÀ NẴNG - BÀ NÀ -->
                         <div class="thuexe_layout_bang_gia">
                             <div class="bang_gia--inner">
                                 <div class="heading">
@@ -2780,7 +3158,7 @@
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">550K </span>
+                                                    <span class="price">600K </span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -2793,47 +3171,33 @@
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">650K</span>
+                                                    <span class="price">750K</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td rowspan="2">Xe 16 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
-                                                    <span class="price">600K </span>
+                                                    <span class="price">500K </span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">1100K </span>
+                                                    <span class="price">1000K </span>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="footer-bang-gia">
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="tel:0979726546"><i
-                                                class="fas fa-phone"></i><span>0905 833 828</span></a>
-                                    </div>
-                                    <div class="button-form">
-                                        <a class="bricks-button md bricks-background-secondary bricks-link-type-external"
-                                            href="#dat-xe"><span>ĐẶT XE NGAY</span></a>
-                                    </div>
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="bana.html">Chi tiết</a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
+                        <!-- ĐÀ NẴNG - NÚI THẦN TÀI -->
                         <div class="thuexe_layout_bang_gia">
                             <div class="bang_gia--inner">
                                 <div class="heading">
-                                    <h4 class="bricks-heading"> ĐÀ NẴNG - NÚI THẦN TÀI</h4>
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - NÚI THẦN TÀI (2 chiều) </h4>
                                     <div class="icon-box-wrapper icon-position-top">
                                         <div class="icon">
                                             <i class="fas fa-road"></i>
@@ -2885,52 +3249,1121 @@
                                                 <td rowspan="2">Xe 16 chỗ</td>
                                                 <td class="cloumn-2">
                                                     <span class="type">1 chiều</span>
+                                                    <span class="price">600K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1000K </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ĐÀ NẴNG -MIKUZAKI-ĐÀ NẴNG -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG -MIKUZAKI - ĐÀ NẴNG </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 11 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 21 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price"> -- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">400K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">500K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">700K </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - LINH ỨNG -NGŨ HÀNH SƠN -ĐÀ NẴNG -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - LINH ỨNG -NGŨ HÀNH SƠN -ĐÀ NẴNG </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price"> -- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">550k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">650k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">900K </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vườn Quốc Gia Bạch Mã -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - VƯỜN BẠCH MÃ (2 chiều) </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 65 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 97 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1400K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1600K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">Thương lượng </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - QUẢNG TRỊ -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - QUẢNG TRỊ </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 149 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1600K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1800K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">2300K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - QUẢNG BÌNH -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - QUẢNG BÌNH </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 267 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">3200K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">3500K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">4000K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Suối Mơ và Hòa Phú Thành-->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - SUỐI MƠ / HÒA PHÚ THÀNH </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 30 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 60 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">800K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1000K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">Thương lượng </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cổng Trời Đông Giang-->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - CỔNG TRỜI ĐÔNG GIANG </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 80 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 150 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1500K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1800K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">Thương lượng </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- ĐÀ NẴNG - LĂNG CÔ -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - LĂNG CÔ </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: 20 km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: 30 phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
                                                     <span class="price">700K </span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="cloumn-2">
                                                     <span class="type">2 chiều</span>
-                                                    <span class="price">1300K </span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">800K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1000K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="footer-bang-gia">
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="tel:0979726546"><i
-                                                class="fas fa-phone"></i><span>0905 833 828</span></a>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - QUY NHƠN -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - QUY NHƠN </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
                                     </div>
-                                    <div class="button-form">
-                                        <a class="bricks-button md bricks-background-secondary bricks-link-type-external"
-                                            href="#dat-xe"><span>ĐẶT XE NGAY</span></a>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
                                     </div>
-                                    <div class="button-tel">
-                                        <a class="bricks-button md bricks-background-primary bricks-link-type-external icon-left"
-                                            href="nuithantai.html">Chi tiết</a>
-                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">3300K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">3500K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">4000K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- ĐÀ NẴNG - TT CHÂU Ô -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - TT CHÂU Ô </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1200k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1400k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1800K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - KCN DUNG QUẤT -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - KCN DUNG QUẤT </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1300k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1600k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">2000K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">--</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ĐÀ NẴNG - QUẢNG NGÃI -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG - QUẢNG NGÃI </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1500k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">2500K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">1700k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">2400K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">2100K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">2800K</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ĐÀ NẴNG-LINH ỨNG-NGŨ HÀNH
+                                        SƠN-RỪNG DỪA-HỘI AN-ĐÀ NẴNG -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading" style="font-size:15px;"> ĐÀ NẴNG-LINH ỨNG-NGŨ HÀNH
+                                        SƠN-RỪNG DỪA-HỘI AN-ĐÀ NẴNG </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1000k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1200k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">Thương lượng </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ĐÀ NẴNG-LINH ỨNG-
+                                        HỘI AN-ĐÀ NẴNG-->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> ĐÀ NẴNG-LINH ỨNG-
+                                        HỘI AN-ĐÀ NẴNG </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">850K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">1000k </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">1 chiều</span>
+                                                    <span class="price">-- </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">2 chiều</span>
+                                                    <span class="price">Thương lượng </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- BAO XE NGUYÊN NGÀY (TOUR CITY) -->
+                        <div class="thuexe_layout_bang_gia">
+                            <div class="bang_gia--inner">
+                                <div class="heading">
+                                    <h4 class="bricks-heading"> BAO XE NGUYÊN NGÀY (TOUR CITY) </h4>
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Khoảng cách: -- km</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-wrapper icon-position-top">
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <p>Thời gian: -- phút </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Xe 4 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">dưới 10Km/10h</span>
+                                                    <span class="price">1200K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">Trên 10km</span>
+                                                    <span class="price">Vượt km : 7K/km , Vượt Thời gian : 70K/h</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 7 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">dưới 10Km/10h</span>
+                                                    <span class="price">1500K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">Trên 10km</span>
+                                                    <span class="price">Vượt km : 7K/km , Vượt Thời gian : 70K/h </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Xe 16 chỗ</td>
+                                                <td class="cloumn-2">
+                                                    <span class="type">dưới 10Km/10h</span>
+                                                    <span class="price">2000K </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cloumn-2">
+                                                    <span class="type">Trên 10km</span>
+                                                    <span class="price">Vượt km : 7K/km , Vượt Thời gian : 70K/h </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="assets/tailieu/bangiadichvu.xlsx" download="bangiadichvu.xlsx"
+                            style="color: rgb(0, 81, 255);text-decoration: underline;font-weight:bold;"><i
+                                class="fa fa-download" aria-hidden="true"></i> &nbsp;Tải xuống bảng giá</a>
+
+
 
                     </div>
                 </div>
             </div>
         </section>
-
+        <hr>
+        <h5 style="color: red;text-align: center;">* Giá trên chưa bao gồm VAT </h5>
+        <h5 style="color: red;text-align: center;">* Sau 22h phụ thu : 50K(xe 4-7 chỗ), 100K (xe 16 chỗ) </h5>
+        <h5 style="color: red;text-align: center;">* Từ 01:00 đến 04:00 phụ thu : 100K(xe 4 chỗ),150K(xe 7 chỗ), 200K
+            (xe
+            16 chỗ) </h5>
+        <hr>
 
 
     </main>
     <footer id="brx-footer">
         <section id="brxe-awwvaq" class="brxe-section bricks-lazy-hidden">
-            <div id="brxe-hsssgn" class="brxe-container bricks-lazy-hidden"><a id="brxe-rkcter" class="brxe-image tag"
-                    href="" aria-current="page"><img width="214" height="98"
-                        src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20214%2098&#039;%3E%3C/svg%3E"
-                        class="css-filter size-full bricks-lazy-hidden" alt="" decoding="async" loading="lazy"
-                        data-src=""
-                        data-type="string" /></a>
+            <div id="brxe-hsssgn" class="brxe-container bricks-lazy-hidden">
                 <div id="brxe-poecya" class="brxe-text">
                     <p>HÃY LIÊN LẠC VỚI CHÚNG TÔI ĐỂ ĐỒNG HÀNH CÙNG CHUYẾN DU LỊCH CỦA CÁC BẠN, ĐỂ CHUYẾN ĐI THÊM PHẦN
                         TRỌN VẸN</p>
@@ -2942,25 +4375,182 @@
                     <p>( ZALO, MESSENGER )</p>
                 </div>
             </div>
-            <div id="brxe-vpoxit" class="brxe-container bricks-lazy-hidden">
+            <!-- <div id="brxe-vpoxit" class="brxe-container bricks-lazy-hidden">
                 <ul id="brxe-czywud" class="brxe-social-icons">
-                    <li class="repeater-item has-link"><a href=""
-                            target="_blank"><i class="fab fa-facebook-messenger"></i><span>Message</span></a></li>
-                    <li class="repeater-item has-link"><a href=""><i
-                                class="fas fa-mobile-alt"></i><span>Gọi Ngay</span></a></li>
+                    <li class="repeater-item has-link"><a href="" target="_blank"><i
+                                class="fab fa-facebook-messenger"></i><span>Message</span></a></li>
+                    <li class="repeater-item has-link"><a href=""><i class="fas fa-mobile-alt"></i><span>Gọi
+                                Ngay</span></a></li>
                     <li class="repeater-item has-link"><a href="#dat-xe"><i class="fas fa-car-alt"></i><span>Đặt
                                 xe</span></a></li>
-                    <li class="repeater-item has-link"><a href=""
-                            target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+                    <li class="repeater-item has-link"><a href="" target="_blank"><i
+                                class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
                     <li class="repeater-item has-link"><a href="https://zalo.me/diensooday" target="_blank">
-                        <img src="assets/img/logo/Icon_of_Zalo.svg.webp" style="height: 38px;width: 40px;" alt=""><span>Zalo</span></a></li>
+                            <img src="assets/img/logo/Icon_of_Zalo.svg.webp" style="height: 38px;width: 40px;"
+                                alt=""><span>Zalo</span></a></li>
                 </ul>
+            </div> -->
+
+            <div id="brxe-vpoxit" class="brxe-container bricks-lazy-hidden">
+                <ul id="brxe-czywud" class="brxe-social-icons">
+                    <li class="repeater-item has-link"><a href="#contacts" target="_blank"><i
+                                class="fa-brands fa-line"></i><span>Line</span></a></li>
+                    <li class="repeater-item has-link" style="background-color:#d47f42">
+                        <a href="tel:"
+                            onclick="event.preventDefault(); var phoneNumber = '0905833828'; window.location.href = 'tel:' + phoneNumber;">
+                            <i class="fas fa-mobile-alt " style="color:#ffffff"></i><span style="color: white;">Gọi
+                                Ngay</span>
+                        </a>
+                    </li>
+                    <li class="repeater-item has-link" style="background-color: #F5AB18;"><a href="#dat-xe">
+                            <i class="fas fa-car-alt" style="color:#ffffff"></i><span style="color:#ffffff">Đặt
+                                xe</span></a></li>
+
+
+                    <li class="repeater-item has-link" style="background-color: rgb(0, 68, 255);"><a href=""
+                            target="_blank"><i class="fab fa-facebook-f" style="color:#ffffff"></i><span
+                                style="color:#ffffff">Facebook</span></a></li>
+                    <li class="repeater-item has-link" style="background-color: #0286F9;"><a
+                            href="https://zalo.me/0905833828" target="_blank">
+                            <img src="assets/img/logo/Icon_of_Zalo.svg.webp" style="height: 30px;width: 40px;"
+                                alt=""><span style="padding-left: 2px;color: white;"> Zalo</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Đặt xe ngay -->
+
+            <div class="container" id="dat-xe">
+                <h2>ĐẶT XE TRỰC TUYẾN</h2>
+                <form action="" method="post" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="box-choose">Chọn loại hình:</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="box-choose" id="one-way"
+                                    value="Một chiều" checked>
+                                <label class="form-check-label" for="one-way">Một chiều</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="box-choose" id="round-trip"
+                                    value="Khứ hồi">
+                                <label class="form-check-label" for="round-trip">Khứ hồi</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-name">Họ và tên:</label>
+                        <input type="text" class="form-control" id="form-name" placeholder="Họ và tên *"
+                            name="form-name" required>
+                        <div class="valid-feedback">Hợp lệ.</div>
+                        <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-tel">Số điện thoại:</label>
+                        <input type="tel" class="form-control" id="form-tel" placeholder="Số điện thoại *"
+                            name="form-tel" required>
+                        <div class="valid-feedback">Hợp lệ.</div>
+                        <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="form-departure">Nơi đi:</label>
+                            <input type="text" class="form-control" id="form-departure" placeholder="Nơi đi *"
+                                name="form-departure" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="form-destination">Nơi đến:</label>
+                            <input type="text" class="form-control" id="form-destination" placeholder="Nơi đến *"
+                                name="form-destination" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền thông tin.</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-car-type">Loại xe:</label>
+                        <select class="form-control" id="form-car-type" name="form-car-type" required>
+                            <option value="">Loại xe *</option>
+                            <option value="Xe 4 chỗ">Xe 4 chỗ</option>
+                            <option value="Xe 7 chỗ">Xe 7 chỗ</option>
+                            <option value="Xe 16 chỗ">Xe 16 chỗ</option>
+                        </select>
+                        <div class="valid-feedback">Hợp lệ.</div>
+                        <div class="invalid-feedback">Vui lòng chọn loại xe.</div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="form-adult">Người lớn:</label>
+                            <select class="form-control" id="form-adult" name="form-adult" required>
+                                <option value="">Người lớn *</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng chọn số lượng người lớn.</div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="form-child">Trẻ em:</label>
+                            <select class="form-control" id="form-child" name="form-child">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="form-date">Ngày đi:</label>
+                            <input type="date" class="form-control" id="form-date" name="form-date" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng chọn ngày đi.</div>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="form-hours">Giờ đi:</label>
+                            <input type="number" class="form-control" id="form-hours" min="0" max="23" placeholder="Giờ"
+                                name="form-hours" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng chọn giờ đi.</div>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="form-minutes">Phút đi:</label>
+                            <input type="number" class="form-control" id="form-minutes" min="0" max="59"
+                                placeholder="Phút" name="form-minutes" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng chọn phút đi.</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đặt ngay</button>
+                </form>
+                <div class="mt-3">
+                    <p><em>Thông tin mà bạn cung cấp sẽ được bảo mật tuyệt đối, tuân thủ theo chính sách bảo toàn thông
+                            tin của chúng tôi.</em></p>
+                </div>
+            </div>
+
+            </div>
+
+            </div>
             </div>
         </section>
     </footer>
-    <link rel='stylesheet' id='bricks-swiper-css'
-        href=''
-        media='all' />
+    <link rel='stylesheet' id='bricks-swiper-css' href='' media='all' />
     <style id='bricks-dynamic-data-inline-css'>
         /* TEMPLATE SHORTCODE CSS (ID: 368) */
 
@@ -3083,6 +4673,19 @@
             });
 
         });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Hiển thị popup khi trang được tải
+            $('#overlay').css('display', 'flex');
+        });
+
+        // Hàm đóng popup
+        function closePopup() {
+            $('#overlay').css('display', 'none');
+        }
+
     </script>
 </body>
 
