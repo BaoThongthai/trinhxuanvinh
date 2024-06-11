@@ -5,9 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thông tin chuyến đi</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #passwordOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    #passwordOverlay .password-box {
+      text-align: center;
+      background: #333;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
+  <div id="passwordOverlay">
+    <div class="password-box">
+      <h3>Nhập Mật Khẩu</h3>
+      <input type="password" id="passwordInput" class="form-control" placeholder="Password">
+      <button id="submitPassword" class="btn btn-primary mt-2">Submit</button>
+      <div id="passwordError" class="text-danger mt-2" style="display: none;">Incorrect password, please try again.</div>
+    </div>
+  </div>
+
+  <div class="container" id="mainContent" style="display: none;">
     <h2 class="mt-4">Thông tin chuyến đi</h2>
     <div class="row" id="formDataList">
       <!-- Data will be dynamically added here -->
@@ -17,18 +47,36 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script>
     $(document).ready(function() {
-      // Fetch data from API
-      $.ajax({
-        url: 'https://6605116c2ca9478ea17f2d5d.mockapi.io/sendNail',
-        type: 'GET',
-        success: function(response) {
-          // Process response and display data
-          displayFormData(response);
-        },
-        error: function(xhr, status, error) {
-          console.error('Error fetching data:', error);
+      // Define the correct password
+      var correctPassword = "12345";
+
+      // Password submit button click event
+      $('#submitPassword').click(function() {
+        var enteredPassword = $('#passwordInput').val();
+        if (enteredPassword === correctPassword) {
+          $('#passwordOverlay').fadeOut();
+          $('#mainContent').fadeIn();
+          loadData();
+        } else {
+          $('#passwordError').show();
         }
       });
+
+      // Load data function
+      function loadData() {
+        // Fetch data from API
+        $.ajax({
+          url: 'https://6605116c2ca9478ea17f2d5d.mockapi.io/sendNail',
+          type: 'GET',
+          success: function(response) {
+            // Process response and display data
+            displayFormData(response);
+          },
+          error: function(xhr, status, error) {
+            console.error('Error fetching data:', error);
+          }
+        });
+      }
 
       // Function to display form data
       function displayFormData(data) {
@@ -52,12 +100,34 @@
           cardHTML += '<p class="card-text"><strong>Giờ đi:</strong> ' + item["form-hours"] + '</p>';
           cardHTML += '<p class="card-text"><strong>Phút đi:</strong> ' + item["form-minutes"] + '</p>';
           cardHTML += '<p class="card-text"><strong>Loại hình:</strong> ' + item["box-choose"] + '</p>';
+          cardHTML += '<button class="btn btn-danger delete-button" data-id="' + item["id"] + '">Delete</button>';
           cardHTML += '</div>';
           cardHTML += '</div>';
           cardHTML += '</div>';
 
           // Append card HTML to the row
           formDataList.append(cardHTML);
+        });
+
+        // Attach click event to delete buttons
+        $('.delete-button').on('click', function() {
+          var id = $(this).data('id');
+          deleteFormData(id);
+        });
+      }
+
+      // Function to delete form data
+      function deleteFormData(id) {
+        $.ajax({
+          url: 'https://6605116c2ca9478ea17f2d5d.mockapi.io/sendNail/' + id,
+          type: 'DELETE',
+          success: function() {
+            // Remove the card from the UI
+            $('button[data-id="' + id + '"]').closest('.col-md-4').remove();
+          },
+          error: function(xhr, status, error) {
+            console.error('Error deleting data:', error);
+          }
         });
       }
     });

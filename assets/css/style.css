@@ -1769,6 +1769,9 @@ section {
   line-height: 1;
 }
 
+.mobile-only {
+  display: none;
+}
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
   color: #106eea;
@@ -2028,6 +2031,9 @@ section {
   .container {
     width: 100%;
   }
+  .mobile-only {
+    display: block;
+  }
 
   #animated-heading {
     width: 160px;
@@ -2082,7 +2088,9 @@ section {
     margin-left: 60px;
     margin-top: 20px;
   }
-
+  .mobile-only {
+    display: block;
+  }
   .container {
     width: 100%;
   }
@@ -2136,6 +2144,9 @@ section {
   #hero {
     padding: 20px;
     height: 400px;
+  }
+  .mobile-only {
+    display: block;
   }
   #google_translate_element{
     margin-left: 60px;
@@ -2194,6 +2205,9 @@ section {
   /* Đặt lại các thuộc tính CSS để phù hợp với màn hình nhỏ */
   #hero {
     padding: 20px;
+  }
+  .mobile-only {
+    display: block;
   }
   #google_translate_element{
     margin-left: 60px;
@@ -2254,6 +2268,9 @@ section {
     padding: 20px;
     height: 400px;
   }
+  .mobile-only {
+    display: block;
+  }
   #google_translate_element{
     margin-left: 60px;
     margin-top: 20px;
@@ -2311,6 +2328,9 @@ section {
   #hero {
     padding: 20px;
     height: 400px;
+  }
+  .mobile-only {
+    display: block;
   }
   #google_translate_element{
     margin-left: 60px;
@@ -2370,6 +2390,9 @@ section {
   #hero {
     padding: 20px;
   
+  }
+  .mobile-only {
+    display: block;
   }
   #google_translate_element{
     margin-left: 60px;
@@ -2560,6 +2583,9 @@ section {
   border-radius: 10px;
   padding-right: 10px;
 }
+
+
+
 
 
 
