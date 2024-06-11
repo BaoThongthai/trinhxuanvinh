@@ -2501,7 +2501,7 @@ section {
 }
 
 #featured-services {
-  background-image: url('/assets/background/hinhnenden4k.jpg');
+  background-image: url('https://i.pinimg.com/originals/71/c6/b0/71c6b0e088a04dc7c4b2b4e34d96b5e5.jpg');
   background-repeat: no-repeat; /* Ngăn chặn hình nền lặp lại */
   background-size: cover; /* Đảm bảo hình nền phủ đầy kích thước của phần tử */
   background-position: center; /* Căn giữa hình nền */
@@ -2511,7 +2511,7 @@ section {
 
 
 #portfolio,#clients{
-  background-image: url('/assets/background/hinhnenden4k.jpg');
+  background-image: url('https://i.pinimg.com/originals/71/c6/b0/71c6b0e088a04dc7c4b2b4e34d96b5e5.jpg');
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center; 
@@ -2525,7 +2525,7 @@ section {
 }
 
 #footer{
-  background-image: url('/assets/background/hinhnenden4k.jpg');
+  background-image: url('https://i.pinimg.com/originals/71/c6/b0/71c6b0e088a04dc7c4b2b4e34d96b5e5.jpg');
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center; 
